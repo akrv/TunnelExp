@@ -204,10 +204,8 @@ class Exp():
         reactionTime2 = -1
 
         event.clearEvents()
-
-        self.setShapeColor(shapeObject, self.config.objectColor)
-
         self.drawNoisyBackground()
+        self.setShapeColor(shapeObject, self.config.objectColor)
         self.drawRoom()
         self.drawFixation()
         self.window.flip()
@@ -216,9 +214,9 @@ class Exp():
 
         #shapeObject.setPos(self.posForExit[self.config.exits.DOWN])
         #shapeObject.draw()
+        self.drawNoisyBackground()
         self.setShapePos(shapeObject, self.posForExit[self.config.exits.DOWN])
         self.drawShape(shapeObject)
-        self.drawNoisyBackground()
         self.drawRoom()
         self.window.flip()
 

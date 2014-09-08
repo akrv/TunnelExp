@@ -48,7 +48,7 @@ class GazeProcessor():
             return
         self.__outPickle = open(self.__openDataName + ".pic", "wb")
         self.__outPlain = open(self.__openDataName + ".tob", "w")
-        self.__outPlain.write("time, trigger, leftValidity, rightValidity, leftX, leftY, rightX, rightY\n")
+        self.__outPlain.write("time, trigger, leftValidity, rightValidity, leftX, leftY, rightX, rightY, leftDia, rightDia\n")
         self.__outPlain.flush()
         self.__dataIndex        = [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
 
