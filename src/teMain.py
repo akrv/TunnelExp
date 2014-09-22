@@ -91,7 +91,7 @@ class Exp():
         imgPractice1 = visual.SimpleImageStim(win=self.window, image="..\\img\\training1.png")
         imgPractice2 = visual.SimpleImageStim(win=self.window, image="..\\img\\training2.png")
         imgExperiment = visual.SimpleImageStim(win=self.window, image="..\\img\\versuch.png")
-        self.NoisyBG = visual.SimpleImageStim(win=self.window, image="..\\img\\howToNameThisPattern.png") #importing background noise image
+        self.NoisyBG = visual.ImageStim(win=self.window, image="..\\img\\howToNameThisPattern.png") #importing background noise image
 
         self.instructions = {'start1': imgStart1,
                              'start2': imgStart2,
@@ -110,9 +110,9 @@ class Exp():
                 if not os.path.exists(self.config.outputFolder+"/vp"+str(self.config.subject)+"/"+tobiiFilename+".tob"):
                     fileExists = False
 
-        #tobii.init(self.window, self.config.outputFolder+"/vp"+str(self.config.subject)+"/", tobiiFilename)
-        #self.useTobii = True
-        self.useTobii = False
+        tobii.init(self.window, self.config.outputFolder+"/vp"+str(self.config.subject)+"/", tobiiFilename)
+        self.useTobii = True
+        #self.useTobii = False
 
     def drawNoisyBackground(self):
         '''Method to draw noise background
