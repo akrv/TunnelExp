@@ -91,7 +91,7 @@ class Exp():
         imgPractice1 = visual.SimpleImageStim(win=self.window, image="..\\img\\training1.png")
         imgPractice2 = visual.SimpleImageStim(win=self.window, image="..\\img\\training2.png")
         imgExperiment = visual.SimpleImageStim(win=self.window, image="..\\img\\versuch.png")
-        self.NoisyBG = visual.SimpleImageStim(win=self.window, image="..\\img\\howToNameThisPattern1.png") #importing background noise image
+        self.NoisyBG = visual.SimpleImageStim(win=self.window, image="..\\img\\howToNameThisPattern.png") #importing background noise image
 
         self.instructions = {'start1': imgStart1,
                              'start2': imgStart2,
