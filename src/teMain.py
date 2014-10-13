@@ -110,9 +110,9 @@ class Exp():
                 if not os.path.exists(self.config.outputFolder+"/vp"+str(self.config.subject)+"/"+tobiiFilename+".tob"):
                     fileExists = False
 
-        tobii.init(self.window, self.config.outputFolder+"/vp"+str(self.config.subject)+"/", tobiiFilename)
-        self.useTobii = True
-        #self.useTobii = False
+        #tobii.init(self.window, self.config.outputFolder+"/vp"+str(self.config.subject)+"/", tobiiFilename)
+        #self.useTobii = True
+        self.useTobii = False
 
     def drawNoisyBackground(self):
         '''Method to draw noise background
